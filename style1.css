@@ -1,0 +1,61 @@
+body
+{
+	background-image:url(https://i.pinimg.com/736x/59/a6/a0/59a6a0bb64cec4ff608e63d6b47dc19c.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+}
+.card1
+{
+	box-shadow:4px 4px 4px 4px #626880;
+	height:1700px;
+	width:18%;
+	text-align:center;
+	float: left;
+
+}
+.card2
+{
+	box-shadow:4px 4px 4px 4px #626880;
+	height:80px;
+	width:82%;
+	float:right;
+}
+.pad
+{
+	padding-right: 20px;
+	font-size: 20px;
+
+}
+.matter
+{
+	float:right;
+	margin-left: 50%;
+}
+.sideheading{
+	text-align: left;
+
+}
+.subhead
+{
+	font-family:algerian;
+	font-size: 35px;
+	color:rgb(60, 60, 60);
+  }
+ input[type=fill1]
+{
+	width: 20%; 
+
+  margin: 8px 0;
+
+}
+
+input[type=fill2]
+{
+	width: 10%;
+	
+  margin: 8px 0;
+}
+.val{
+	font-size: 20px;
+	margin-left: 750px
+}
