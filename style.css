@@ -11,12 +11,14 @@ body
 	background-position: center;
 	box-sizing:border-box;
 	font-family:sans-serif;
+	background-repeat:none;
 
 }
 .menu-bar
 {
 	background:rgb(50,40,50);
 	text-align: center;
+	width:100%;
 }.menu-bar ul{
 	display:inline-flex;
 	list-style: none;
