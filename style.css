@@ -11,15 +11,67 @@ body
 	background-position: center;
 	box-sizing:border-box;
 	font-family:sans-serif;
-	background-repeat:none;
 
 }
+.btn-toggle-nav{
+	width:60px;
+	height: 100%;
+	background-color:grey;
+	background-image: url(menubar.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+	cursor:pointer;
+}
+.nav-sidebar{
+	position:fixed;
+	left:0;
+	bottom: 0;
+	top:65px;
+	width:50px;
+	height:calc(100vh-60px);
+	padding:0 5px;
+	background-color: #1b1b1b;
+	z-index: 1000;
+	transition: all 0.3s ease-in-out;
+}
+.nav-sidebar ul{
+	padding-top: 15px;
+	overflow: hidden;
+	visibility: hidden;
+	
+}
+.nav-sidebar ul li{
+	line-height: 60px;
+	list-style: none;
+	
+}
+.nav-sidebar ul li span , .nav-sidebar ul li a{
+	display: block;
+	height: 60px;
+	padding:0 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#fff;
+	font-family: arial;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity:0;
+	transition: all 0.3s ease-in-out;
+}
+.nav-sidebar ul li a:hover{
+	background-color: #222;
+}
+
 .menu-bar
 {
+	position:fixed;
 	background:rgb(50,40,50);
+	height: 70px;
+	width: 100%;
 	text-align: center;
-	width:100%;
 }.menu-bar ul{
+	margin-left: 60px;
 	display:inline-flex;
 	list-style: none;
 	color:white;
@@ -41,6 +93,7 @@ body
 	background:#77878c;
 	border-radius:5px;
 	box-shadow: 2px 0px 1px 1px;
+	font-size: 20px;
 }
 .sub-menu-1
 {
@@ -91,7 +144,9 @@ float: right;
 	margin-left: 110px;
 	background:rgb(50,40,50);
 }
-section{
+
+
+span{
 	position: relative;
 	width: 100%;
 	height: 80vh;
@@ -101,14 +156,14 @@ section{
 	overflow: hidden;
 
 }
-section .content{
+span .content{
 	position: relative;
 	z-index: 1;
 	margin-width:0 auto;
 	max-width: 900px;
 	text-align: center;
 }
-section:before{
+span:before{
 	content:'';
 	position:absolute;
 	top:0;
@@ -116,7 +171,7 @@ section:before{
 	width: 100%;
 	height: 100%;
 }	
-section .content h2{
+span.content h2{
 	margin:0;
 	padding:0;
 	color:#fff;
